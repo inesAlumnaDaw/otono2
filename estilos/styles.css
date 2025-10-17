@@ -1,0 +1,55 @@
+/* estilos/styles.css */
+:root{
+  --bg: #0f1416;
+  --text: #e7e5e4;
+  --accent: #f59e0b; /* ámbar otoñal */
+  --card: #1b2327;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  line-height:1.5;
+  background: var(--bg);
+  color: var(--text);
+}
+.site-header,.site-footer{
+  padding:1rem 1.25rem;
+  border-bottom:1px solid #263036;
+}
+.site-footer{ border-top:1px solid #263036; border-bottom:none; margin-top:2rem }
+nav a{
+  color:var(--text);
+  text-decoration:none;
+  margin-right:.75rem;
+  border-bottom:2px solid transparent;
+}
+nav a:hover{ border-color: var(--accent) }
+.hero{
+  padding:2rem 1.25rem;
+  background: linear-gradient(135deg, rgba(245,158,11,.15), transparent);
+}
+button{
+  padding:.6rem 1rem;
+  border:1px solid #334249;
+  background:#1b2327;
+  color:var(--text);
+  border-radius:.5rem;
+  cursor:pointer;
+}
+button:hover{ border-color: var(--accent) }
+.card{
+  background: var(--card);
+  margin:1rem 1.25rem;
+  padding:1rem;
+  border:1px solid #263036;
+  border-radius:.75rem;
+}
+/* Tema claro alternativo al pulsar el botón */
+body.tema-claro{
+  --bg: #fffaf0;
+  --text: #1f2937;
+  --accent:#9a3412;
+  --card:#fff;
+}
+img{max-width:100%;height:auto;display:block}
