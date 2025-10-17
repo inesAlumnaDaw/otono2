@@ -1,4 +1,5 @@
 // js/app.js
+// mejora de animaciones
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('cta');
   if (btn){
